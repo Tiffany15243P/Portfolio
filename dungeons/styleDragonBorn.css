@@ -1,0 +1,28 @@
+body {
+   background-image: url(images/simple\ mountian\ background.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#h1 {
+    text-align:center;
+    font-family: Sigmar One;
+    text-shadow: 0px 5px 13px rgb(255, 237, 43), 5px 0px 0px black;
+}
+#DragonBorn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    text-shadow: 0px 0px 3px black;
+}
+#image {
+    border-style: inset;
+    border-width: 5px;
+    border-color: darkred;
+}
+#table {
+    color:black;
+    text-align: center;
+    text-shadow: 0px 0px 0px;
+}
+.tableColor {
+    background-color: rgb(255, 236, 236);
+}

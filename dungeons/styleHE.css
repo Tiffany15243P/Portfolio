@@ -1,0 +1,32 @@
+body {
+    background-image: url(images/simple\ blue\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-position-y: -391px;
+    background-color: lightgray;
+
+}
+#h1 {
+    text-align: center;
+    font-size: 30px;
+    color:aliceblue;
+    border-style:hidden;
+    box-shadow: 0px 0px 40px rgb(100, 100, 255);
+    text-shadow: 0px 0px 8px rgb(178, 95, 255), 0px 2px 4px rgb(255, 114, 196);
+}
+#image {
+    border-style: outset;
+    border-color:rgb(100, 100, 255);
+    border-width: 4px;
+    box-shadow: 0px 0px 10px rgb(178, 95, 255), 5px 3px 9px darkblue;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#halfElf {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.heading {
+    color:rgb(113, 60, 163);
+    text-shadow: 0px 0px 6px white, 0px 4px 6px blue;
+}

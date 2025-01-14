@@ -1,0 +1,35 @@
+body {
+    background-image: url(images/snowing-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#h1 {
+    text-align: center;
+    font-size: 30px;
+    color:aliceblue;
+    border-style:hidden;
+    font-family: Ruslan Display;
+    text-shadow: 0px 0px 7px green, 0px 3px 5px rgb(122, 16, 16);
+    border-style: solid;
+    border-color: darkred;
+    box-shadow: 0px 0px 30px red;
+}
+#image {
+    border-style: solid;
+    border-color: darkred;
+    border-width: 5px;
+    box-shadow: 0px 0px 30px rgb(105, 9, 9);
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#halfOrc {
+    color: rgb(61, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 0px 1px red;
+}
+.heading {
+    color:rgb(36, 4, 4);
+    text-shadow: 0px 0px 5px rgb(170, 1, 1);
+    font-family:Rubik Wet Paint ;
+}

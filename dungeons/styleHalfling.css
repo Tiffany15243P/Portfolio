@@ -1,0 +1,26 @@
+body {
+    background-image: url(images/simple\ forest\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-position-y: -580px;
+    background-color: rgb(126, 215, 126);
+
+}
+#h1 {
+    text-align: center;
+    color: white;
+    font-family: Mogra;
+    text-shadow: 0px 5px 10px rgb(14, 59, 14);
+    border-style: hidden;
+    box-shadow: 0px 0px 10px green;
+}
+#Halfling {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    text-shadow: 0px 2px 8px black;
+}
+#image {
+    border-style: inset;
+    border-width: 5px;
+    border-color: green ;
+}

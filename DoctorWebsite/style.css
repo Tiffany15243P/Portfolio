@@ -1,0 +1,501 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn {
+    display:flex;
+    border: 2px hidden rgb(71, 71, 206);
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding:3px;
+    padding-inline: 16px;
+    border-radius: 15px;
+    transition: tansform 0.3;
+}
+.the-btn-fill {
+    background-color: rgb(71, 71, 206);
+    text-decoration: none;
+    color: white;
+}
+.the-btn-fill:where(:hover, :focus) {
+    background-color: rgb(33, 33, 117);
+    box-shadow: 2px 2px 6px black;
+}
+.the-btn-fill:where(:active, :focus-visible) {
+    background-color: rgb(165, 165, 255);
+}
+.icon-btn {
+    height: 40px;
+    width: 40px;
+    display:grid;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(85, 85, 85);
+    font-size: x-large;
+    position: relative;
+    bottom: 20px;
+    cursor: pointer;
+}
+.icon-btn:where(:active, :focus-visible) {
+    background-color: rgb(110, 110, 110);
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 4;
+}
+
+.header {
+    animation:  slide-in 500ms ease forwards;
+    height: 60px;
+    background-color: rgb(169, 111, 224);
+}
+@keyframes slide-in {
+    0% {transform: translateY(-100%); }
+    100% {transform: translateY(0); }
+}
+.header .container {
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.nav-toggle-btn .close,
+.nav-toggle-btn.active .open {display: none;}
+
+.nav-toggle-btn .close,
+.nav-toggle-btn.active .close {display: block;}
+
+.navbar {
+    position: absolute;
+    top: 60%;
+    right: 16px;            
+    background-color: rgb(226, 198, 255);
+    min-width: 360px;
+    padding: 10px;
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    scale: 0.80;
+    transition: visibility 0s, opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 2px 2px 5px rgb(64, 39, 86);
+    transform-origin: top right;
+    z-index: 4;
+}
+/*NOTE: for future use of this code*/
+/*Don't use :active as it only applies when the element is actively clicked. 
+Instead, you should use a class (like active) to manage the visibility of the dropdown.*/
+.navbar.active {
+    visibility: visible;
+    opacity: 1;
+    scale: 1;
+}
+.navbar,
+.navbar-list,
+.nav-wrapper {
+    display: grid;
+    gap: 8px;
+    list-style-type: none;
+}
+.nav-lind,
+.the-btn-link {
+    color: rgb(125, 125, 232);
+    text-decoration: none;
+    padding: 6px 12px;
+    transition: transform 0.3s;
+}
+.the-btn-link {
+    border-block-start: 2px solid rgb(193, 141, 249);
+    padding-block-start: 14px;
+}
+.medium-link {
+    color: rgb(21, 28, 131);
+}
+:is(.nav-lind, .the-btn-link):is(:hover, :focus-visible),
+.nav-lind.active {
+    color:rgb(88, 88, 242)
+}
+.navbar .btn {
+    min-width: 92%;
+    padding: 15px;
+}
+.MedaExample {
+    position: absolute;
+    top: 22px;
+    text-decoration: none;
+    color:white;
+    font-size: 1.3vw;
+}
+.images {
+    margin-bottom: 35px;
+    margin-left: 10px;
+    font-size: 1.4vw;
+}
+.home,
+.schedule,
+.providers,
+.locations,
+.about {
+    display: inline-block;
+    color: white;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    font-size: 1.2vw;
+    padding: 10px;
+    transition: font-size 0.3s;
+}
+.option-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.home:hover,
+.schedule:hover,
+.providers:hover,
+.locations:hover,
+.about:hover {
+    color: rgb(197, 197, 255)
+}
+.home {
+    transition: transform 0.3;
+}
+.home:where(:hover, :focus) {
+    transform: scale(1.1);
+    border: 2px hidden;
+    border-radius: 10px;
+    background-color: rgb(183, 129, 233);
+    cursor: pointer;
+}
+.home:where(:active, :focus-visible) {
+    transform: scale(0.7);
+}
+.schedule {
+    transition: transform 0.3;
+}
+.schedule:where(:hover, :focus) {
+    transform: scale(1.1);
+    border: 2px hidden;
+    border-radius: 10px;
+    background-color: rgb(183, 129, 233);
+    cursor: pointer;
+}
+.schedule:where(:active, :focus-visible) {
+    transform: scale(0.7);
+}
+.providers {
+    transition: transform 0.3;
+}
+.providers:where(:hover, :focus) {
+    transform: scale(1.1);
+    border: 2px hidden;
+    border-radius: 10px;
+    background-color: rgb(183, 129, 233);
+    cursor: pointer;
+}
+.providers:where(:active, :focus-visible) {
+    transform: scale(0.7);
+}
+.locations {
+    transition: transform 0.3;
+}
+.locations:where(:hover, :focus) {
+    transform: scale(1.1);
+    border: 2px hidden;
+    border-radius: 10px;
+    background-color: rgb(183, 129, 233);
+    cursor: pointer;
+}
+.locations:where(:active, :focus-visible) {
+    transform: scale(0.7);
+}
+.about {
+    transition: transform 0.3;
+}
+.about:where(:hover, :focus) {
+    transform: scale(1.1);
+    border: 2px hidden;
+    border-radius: 10px;
+    background-color: rgb(183, 129, 233);
+    cursor: pointer;
+}
+.about:where(:active, :focus-visible) {
+    transform: scale(0.7);
+}
+.main {
+    border:2px solid blue;
+    width: 75vw;
+    border-radius: 20px;
+    padding-inline: 20px;
+    margin: auto;
+    text-align: center;
+    background: radial-gradient(rgb(166, 166, 255), rgb(86, 86, 240));
+    box-shadow: 3px 3px 7px black;
+}
+.slogan {
+    font-size: 2.3em;
+    color:rgb(28, 28, 106);
+    margin-bottom: 20px;
+    border: 2px solid blue;
+    background-color: rgb(171, 248, 248);
+    box-shadow: 0px 4px 6px rgb(22, 12, 61);
+    width: 75vw;
+    border-radius: 20px;
+    align-items: center;
+}
+.after-slogan {
+    font-size: 1.2em;
+    border: 2px hidden;
+    padding-inline: 40px;
+    color:rgb(17, 17, 54);
+    margin-bottom: 20px;
+}
+.image-with-after-slogan {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px hidden;
+    border-radius: 20px;
+    padding:10px;
+    transition: transform 0.3s;
+}
+.pic-family {
+    position: relative;
+    border: 2px hidden;
+    padding: 10px;
+    height: 20vw;
+    transition: transform 0.3s;
+}
+.image-with-after-slogan:where(:hover, :focus) {
+    transform: scale(1.1);
+}
+@media (max-width:600px) {
+    .main {
+        width:90vw;
+    }
+    .slogan {
+        font-size: 1.5em; 
+    }
+    .after-slogan {
+        font-size: 1em;
+    }
+}
+.search-location {
+    border: 2px solid rgb(36, 36, 103);
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 1.3vw;
+    align-items: center;
+    width: 60vw;
+    height: 8vw;
+}
+.heading-search {
+    flex-basis: 100%;
+    font-size: 1.5em;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+.state {
+    font-weight: bold;
+    padding-inline: 5px;
+    font-size: 1vw;
+}
+.state-image {
+    margin-right: 5px;
+}
+.state-image-with-state {
+    display:flex;
+    align-items: center;
+    margin-right: 20px;
+    position: relative;
+    bottom: 30px;
+}
+.county, .zip-code {
+    margin: 0 20px; 
+    font-weight: bold;
+    position: relative;
+    bottom: 30px;
+    right: 20px;
+    font-size: 1vw;
+}
+.zip-code {
+    position: relative;
+    right: 40px;
+}
+.search-icon {
+    margin-left: auto; 
+    width: 3vw; 
+    height: 3vw; 
+    cursor: pointer; 
+    transition: transform 0.3s; 
+    position: relative;
+    bottom: 30px;
+}
+.search-icon:hover {
+    transform: scale(1.2); 
+}
+.icon-search-btn {
+    display:flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 5px;
+    width: 25px;
+    box-shadow: 2px 2px 5px rgb(72, 72, 72);
+    position: relative;
+    left: 5px;
+    cursor: pointer;
+}
+.icon-search-btn:where(:active, :focus-visible) {
+    background-color: rgb(108, 108, 108);
+}
+.search-options {
+    position: absolute;
+    top: 75%;
+    left: 200px;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 150px;
+    padding: 5px;
+    overflow-y: auto;
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: visibility 0s, opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    z-index: 4;
+}
+.search-options.active {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+.states-in-USA {
+    display: grid;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+.search-state-link  {
+    color: rgb(132, 132, 132);
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+.search-medium-link {
+    color:rgb(17, 17, 54);
+}
+.search-state-link:hover,
+.search-state-link.active {
+    color:rgb(51, 51, 169); 
+    background-color: rgb(171, 187, 203);
+}
+.states-in-USA {
+    text-align: left;
+    font-size: 20px;
+}
+.state-input {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 7vw;
+    height: fit-content;
+}
+.county-input {
+    width: 7vw;
+    padding: 5px;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    bottom: 29px;
+    right: 35px;
+}
+.zip-code-input {
+    width: 8vw;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    right: 58px;
+    bottom: 29px;
+}
+.search-answer {
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 40vw;
+    height: 5vw;
+    text-align:left;
+    padding: 5px;
+    font-size: 1.4vw;
+}
+.details {
+    max-width: 1200px; 
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
+.background-color {
+    background-color: rgb(249, 231, 255);
+    width: 100.3%;
+    padding: 20px;
+    margin-left: -21px;
+    box-shadow: 2px 3px 5px blueviolet;
+}
+.image-with-walk-ins,
+.image-with-schedule-appointment {
+    flex: 1; 
+    margin: 0 20px; 
+}
+.walk-ins, .schedule-appointment-image {
+    border: 7px outset rgb(9, 9, 46);
+    border-radius: 45px;
+    width: 90%; 
+    height: auto; 
+    box-shadow: 0px 2px 7px black;
+}
+.times-for-walk-ins, .schedule-appointment-text {
+    border: 2px hidden black;
+    text-align: center;
+    font-size: 1.3vw;
+}
+.schedule-appointment-image {
+    height:20vw;
+}
+.schedule-appointment-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid black;
+    background-color: rgb(179, 219, 255);
+    border-radius: 10px;
+    padding: 5px;
+}
+.times-for-walk-ins {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid black;
+    background-color: rgb(179, 219, 255);
+    border-radius: 10px;
+    padding: 5px;
+}
+.emergency {
+    color: darkred;
+}

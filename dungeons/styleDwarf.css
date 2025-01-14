@@ -1,0 +1,26 @@
+body {
+    background-image: url(images/simple\ cavern\ background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    background-size: 2000px;
+    background-position-y: -210px;
+    background-color: rgb(90, 90, 90);
+}
+#dwarf {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(180, 242, 242);
+
+}
+#h1 {
+    text-align: center;
+    text-shadow: 0px 0px 15px black;
+}
+#photo {
+    border-style:groove;
+    border-width: 6px;
+    border-color: rgb(119, 74, 22);
+}
+.heading {
+    text-shadow: 0px 0px 25px black;
+}

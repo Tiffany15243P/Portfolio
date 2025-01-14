@@ -1,0 +1,50 @@
+body {
+    background-image: url(images/simple\ backgroun\ map.jpg);
+}
+#div {
+    font-size:30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 0px 10px rgb(93, 52, 20);
+}
+#h1 {
+    text-align: center;
+    text-shadow: 0px 0px 25px rgb(93, 52, 20);
+    box-shadow: 0px 0px 100px;
+    border-style:double;
+}
+#Dwarf:hover {
+    cursor: pointer;
+    color: rgb(175, 18, 18);
+}
+#halfling:hover {
+    cursor: pointer;
+    color: rgb(175, 18, 18) ;
+}
+#elf:hover {
+    cursor: pointer;
+    color: rgb(175, 18, 18) ;
+}
+#Human:hover {
+    cursor: pointer;
+    color: rgb(175, 18, 18) ;
+}
+#DragonBorn:hover {
+    cursor: pointer;
+    color: rgb(175, 18, 18) ;
+}
+#Gnome:hover {
+    cursor: pointer;
+    color: rgb(175, 18, 18) ;
+}
+#halfElf:hover {
+    cursor: pointer;
+    color: rgb(175, 18, 18) ;
+}
+#HalfOrc:hover {
+    cursor: pointer;
+    color: rgb(175, 18, 18) ;
+}
+#Tiefling:hover {
+    cursor: pointer;
+    color: rgb(175, 18, 18) ;
+}

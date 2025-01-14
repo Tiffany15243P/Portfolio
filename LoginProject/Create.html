@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <h1 id="h1">Create an account: </h1>
+    <div id="login">   
+    <form id="registrationForm">     
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName">
+        <div id="output1"></div><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName">
+        <div id="output2"></div><br><br>
+        
+        <label for="username">Username:</label>
+        <input type="text" id="username">
+        <div id="output3"></div><br><br>
+
+        <label for="password">Password: </label>
+        <input type="password" id="password">
+        <div id="output4"></div><br><br>
+
+        <label for="cPassword">Confirm:</label>
+        <input type="password" id="cPassword">
+        <div id="output5"></div><br><br>
+
+        <button type="submit" id="submit">Submit</button>
+        <p id="p1">Password must be more than 6 characters<br>Uppercase, lowercase, and numbers must be present<br> Special character (!,@,#,$) must be present</p>
+    </form>  
+    </div>
+    <br>
+
+    <script src="index.js"></script>
+</body>
+</html>

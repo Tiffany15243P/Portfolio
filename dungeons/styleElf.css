@@ -1,0 +1,27 @@
+body {
+    background-image: url(images/blue\ Background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    background-position-y: -850px;
+    background-size: 1950px;
+    background-color: rgb(135, 223, 255);
+}
+#h1 {
+    text-align: center;
+    font-family: "Charm";
+    text-shadow: 0px 0px 15px white;
+}
+#Elf {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 0px 2px rgb(9, 9, 90);
+    color:rgb(0, 0, 168)
+}
+#elfImage {
+    border-style: inset;
+    border-width: 3px;
+    border-color: white;
+}
+.heading {
+    text-shadow: 0px 0px 5px rgb(181, 101, 255);
+}

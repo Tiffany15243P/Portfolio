@@ -1,0 +1,352 @@
+body {
+    background-color: rgb(90, 90, 90);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#name {
+    margin-right: auto;
+    font-size: 1.8rem;
+    font-family: Mogra;
+    border-style: hidden;
+    text-shadow: 6px 6px 20px black;
+}
+#home {
+    margin-right: 10px;
+    text-align: center;
+}
+#projects {
+    margin-right: 10px;
+    text-align: center;
+}
+#introduction {
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    padding: 40px;
+    margin: 40px;
+    text-shadow: 6px 6px 20px black;
+}
+#link {
+    border-radius: 10px;
+    margin-top: 14px;
+}
+#p1 {
+    float: left;
+}
+#linkln {
+    display:inline-block;
+    transition: transform 0.3s;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    text-decoration: none;
+    color:white;
+    height: fit-content;
+}
+#linkln:hover {
+    transform: scale(1.2);
+    background-color: grey;
+}
+#linkln:active {
+    transform: scale(0.9);
+    background-color: darkgray;
+}
+#image {
+    margin-left: 600px;
+    border: 5px solid white;
+    border-radius: 100px;
+    box-shadow: 3px 5px 7px rgb(36, 36, 36),-2px -3px 7px rgb(100, 186, 215);
+}
+#information {
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+#para1, #para2 {
+    font-size: small;
+}
+#box1 {
+    float: left;
+    width: 20%;
+    border: 4px double white;
+    padding: 10px;
+    text-align: center;
+    margin-right: 30px;
+    background:radial-gradient(rgb(136, 136, 232),rgb(90, 90, 131));
+    box-shadow: 3px 5px 7px rgb(36, 36, 36);
+    text-shadow: 1px 1px 2px black;
+}
+#box2 {
+    float: left;
+    border: 4px double white;
+    padding: 10px;
+    text-align: center;
+    background:radial-gradient(rgb(136, 136, 232),rgb(90, 90, 131));
+    box-shadow: 3px 5px 7px rgb(36, 36, 36);
+    text-shadow: 1px 1px 2px black;
+}
+#box4 {
+    float: left;
+    border: 4px double white;
+    padding: 10px;
+    text-align: center;
+    margin-left: 30px;
+    background:radial-gradient(rgb(136, 136, 232),rgb(90, 90, 131));
+    box-shadow: 3px 5px 7px rgb(36, 36, 36);
+    text-shadow: 1px 1px 2px black;
+}
+#box5 {
+    float: left;
+    border: 4px double white;
+    padding: 10px;
+    text-align: center;
+    margin-left: 30px;
+    background:radial-gradient(rgb(136, 136, 232),rgb(90, 90, 131));
+    box-shadow: 3px 5px 7px rgb(36, 36, 36);
+    text-shadow: 1px 1px 2px black;
+}
+#box3 {
+    float: left;
+    text-align: center;
+    box-shadow: 3px 5px 7px rgb(36, 36, 36);
+    background:radial-gradient(rgb(29, 29, 87),rgb(14, 14, 46));
+    margin-top: 70px;
+}
+.custom-line {
+    border: 25px solid rgb(157, 196, 229);
+    margin: 20px auto;
+}
+.CL1 {
+    border: 10px solid rgb(81, 75, 165);
+    margin: 20px auto;
+    top: 55px;
+    position: relative;
+}
+#line1 {
+    border: 5px solid rgb(157, 196, 229);
+    margin: 20px auto; 
+    bottom: 20px;
+    position: relative;
+}
+#HeadP {
+    font-family: Sigmar One;
+    font-size: 50px;
+    text-shadow: 5px 5px 25px black, -5px  3px 10px rgb(106, 30, 133);
+}
+#projectH {
+    transition: transform 0.3s;
+    border-style: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color:white;
+}
+#projectH:hover {
+    transform: scale(1.2);
+    background-color: grey;
+}
+#projectH:active {
+    transform: scale(0.9);
+    background-color: darkgray;
+}
+#homeH {
+    transition: transform 0.3s;
+    border-style: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color:white;
+}
+#homeH:hover {
+    transform: scale(1.2);
+    background-color: grey;
+}
+#homeH:active {
+    transform: scale(0.9);
+    background-color: darkgray;
+}
+#preview1 {
+   transition: transform 0.4s;
+   border:2px solid black;
+   width: 25%;
+   background-color: rgb(23, 23, 23);
+   border-radius: 17px;
+   margin-left: auto;
+   margin-right: auto;
+}
+#preview1 img {
+    width: 150px;
+    height: 150px;
+}
+#preview1:hover {
+    transform: scale(1.2);
+    background-color:rgb(37, 37, 63);
+}
+#preview1:active {
+    background-color:rgb(68, 68, 85);
+}
+#Dnd {
+    text-decoration: none;
+    color: white;
+}
+#preview2 {
+    transition: transform 0.4s;
+    border: 2px solid black;
+    background-color: rgb(23, 23, 23);
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 17px;
+}
+#preview2 img {
+    width:150px;
+    height:150px;
+}
+#preview2:hover {
+    transform: scale(1.2);
+    background-color: rgb(37, 37, 63);
+}
+#preview:active {
+    background-color:rgb(68, 68, 85);
+}
+#Login {
+    text-decoration: none;
+    color:white;
+}
+#preview3 {
+    transition: transform 0.4s;
+    border: 2px solid black;
+    background-color: rgb(23, 23, 23);
+    width: 25%;
+    border-radius: 17px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#preview3:hover {
+    transform: scale(1.2);
+    background-color: rgb(37, 37, 63);
+}
+#preview3:active {
+    background-color:rgb(68, 68, 85);
+}
+#preview3 img {
+    width: 150px;
+    height: 150px;
+}
+#calc {
+    text-decoration: none;
+    color:white;
+}
+#head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#pName {
+    margin-right: auto;
+    font-size: 1.8rem;
+    border-style: hidden;
+    text-shadow: 6px 6px 20px black;
+}
+#pHome {
+    margin-left: 5px;
+    text-align: center;
+}
+#extra {
+    text-decoration: none;
+    color: white;
+}
+#pHomeH {
+    transition: transform 0.3s;
+    border-style: none;
+    border-radius: 10px;
+}
+#pHomeH:hover {
+    transform: scale(1.2);
+    background-color: grey;
+}
+#pHomeH:active {
+    transform: scale(0.9);
+    background-color: darkgray; 
+}
+#pPreview1, #pPreview2, #pPreview3, #pPreview4{
+    text-decoration: none;
+    color:white;
+}
+#Pr1 {
+    transition: transform 0.4s;
+    border: 2px hidden;
+    width: fit-content;
+    margin-left: 20px;
+}
+#Pr1:hover {
+    transform: scale(1.1);
+    color:rgb(22, 22, 82);
+    cursor: pointer;
+}
+#Pr2 {
+    transition: transform 0.4s;
+    border: 2px hidden;
+    width: fit-content;
+    margin-left: 20px;
+
+}
+#Pr2:hover {
+    transform: scale(1.1);
+    color:rgb(22, 22, 82);
+    cursor: pointer;
+}#Pr3 {
+    transition: transform 0.4s;
+    border: 2px hidden;
+    width: fit-content;
+    margin-left: 20px;
+
+}
+#Pr3:hover {
+    transform: scale(1.1);
+    color:rgb(22, 22, 82);
+    cursor: pointer;
+}
+#Pr4 {
+    transition: transform 0.4s;
+    border: 2px hidden;
+    width: fit-content;
+    margin-left: 20px;
+}
+#Pr4:hover {
+    transform: scale(1.1);
+    color:rgb(22, 22, 82);
+    cursor: pointer;
+}
+.preview4 {
+    transition: transform 0.4s;
+    border: 2px solid black;
+    background-color: rgb(23, 23, 23);
+    width: 25%;
+    height: 50%;
+    text-decoration: none;
+    border-radius: 17px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.preview4:hover {
+    transform: scale(1.2);
+    background-color: rgb(37, 37, 63);
+}
+.preview4:active {
+    background-color:rgb(68, 68, 85);
+}
+.doctors-image {
+    width:150px;
+    height: 100px;
+}

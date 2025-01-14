@@ -1,0 +1,36 @@
+body {
+    background-color: lightgray;
+}
+#calc {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 410px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(176, 215, 254);
+    box-shadow: 5px 5px 15px rgb(7, 7, 95);
+}
+table {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.entry {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    padding: 5px;
+    background-color: rgb(229, 241, 252);
+}
+.entry:hover {
+    background-color: rgb(146, 183, 216);
+}
+.entry:active {
+    background-color: rgb(105, 150, 189);
+}
+#result {
+    width: 300px;
+    height: 90px;
+    font-size: 2em;
+    border-radius: 10px;
+}

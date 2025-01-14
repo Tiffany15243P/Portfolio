@@ -1,0 +1,30 @@
+/*Meta*/
+->meta name, meta content = title || MedaExample
+->meta name, meta content = description || doctor sign up website made by Tiffany Posey
+/*---------Heading HTML----------*/
+(For the heading, make a header class that is the data-header
+We will also make a logo with it and find a logo that doesn't have a white background.
+Make one if need be. All of this will be in a div class called container. Make a nav class for the 
+navigator section at the top. It will be connected to a button that will toggle the navigator).
+
+Navigator toggle:
+- About us
+- Provider
+- locations
+- book appointment
+    - button class navigator toggle
+       - menu (span)
+       - close (span)
+Navigator wrapper:
+- login
+- get started
+
+/*----------Heading CSS----------*/
+(Make an animation for the logo to slide in once it is clicked on).
+
+Button class navigator toggle:
+- Menu: display (block)
+- close: display (block)
+
+----reflect on the practice of Real estate project CSS for reference---
+
